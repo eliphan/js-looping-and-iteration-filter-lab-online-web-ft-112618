@@ -12,6 +12,14 @@ function fuzzyMatch(drivers, string) {
   })
 }
 
-function matchName(drivers, strinbg) {
-  return 
+function matchName(drivers, string) {
+  return drivers.filter(function(driver){
+    return driver.name.toLowerCase() === string.toLowerCase()
+  })
+}
+
+function matchName (list, name) {
+  return list.filter(function (driver) {
+    return driver.name.toLowerCase() === name.toLowerCase();
+  });
 }
