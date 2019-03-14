@@ -6,9 +6,15 @@ function findMatching(drivers, string) {
 }
 
 function fuzzyMatch(drivers, string) {
-  let stringLenght = string.length;
-  drivers.filter(function (letter) {
-    return name.slice(0) === name
+  let stringLength = string.length;
+  return drivers.filter(function (letter) {
+    return name.slice(0, stringLength) === name
   })
 }
 
+function fuzzyMatch (list, partialName) {
+  let lengthOfName = partialName.length;
+  return list.filter(function (driverName) {
+    return driverName.slice(0, lengthOfName) === partialName;
+  });
+}
