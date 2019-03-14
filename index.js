@@ -7,8 +7,7 @@ function findMatching(drivers, string) {
 
 function fuzzyMatch(drivers, string) {
   drivers.filter(function (letter) {
-    return name
+    return name.slice(0) === name
   })
 }
-
 
