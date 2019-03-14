@@ -5,4 +5,3 @@ function findMatching(drivers, string) {
   })
 }
 
-[1, 2, 3, 4, 5].filter(function (num) { return num > 3; });
