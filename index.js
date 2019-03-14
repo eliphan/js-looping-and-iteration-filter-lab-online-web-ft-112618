@@ -1,7 +1,7 @@
 // Code your solution in this file
-function findMatching(drivers, name) {
+function findMatching(drivers, string) {
   drivers.filter(function (name) {
-    name ==
+    name == string
   })
 }
 
